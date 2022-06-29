@@ -1,0 +1,13 @@
+
+
+/* Borders for checking layout */
+
+.border-red {
+    border: 1px solid red;
+}
+.border-blue {
+    border: 1px solid blue;
+}
+.border-green {
+    border: 1px solid green;
+}
