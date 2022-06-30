@@ -9,6 +9,29 @@ html, body, header, div, nav, a, ul, li {
     font-family: 'Satisfy', cursive;
 } */
 
+
+/* Links */
+
+.link-contact-container {
+    background-color: #335449;
+    transition: .2s;
+    border-radius: 10px;
+}
+.link-contact-container:hover {
+    background-color: #1c2f28;
+}
+
+.link-contact, .link-contact:visited {
+    text-decoration: none;
+    color: #f0f2f1;
+    transition: .2s;
+}
+.link-contact:hover, .link-contact:active {
+    text-decoration: none;
+    color: #5e7b71;
+}
+
+
 /* Colors */
 
 .bg-light-grey {
