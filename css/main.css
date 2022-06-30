@@ -19,7 +19,6 @@ html, body, header, div, nav, a, ul, li {
 }
 
 
-
 /* Borders for checking layout */
 
 .border-red {
@@ -31,3 +30,24 @@ html, body, header, div, nav, a, ul, li {
 .border-green {
     border: 1px solid green;
 }
+
+
+/* Images */
+
+    /* Background image styling */
+
+    .img-title-container {
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 400px;
+    }
+
+    /* Square side images */
+    
+    @media only screen and (max-width: 767px) {
+        .img-side {
+            max-height: 150px;
+        }
+    }
