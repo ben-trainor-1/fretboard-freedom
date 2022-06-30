@@ -1,4 +1,5 @@
 /* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 html, body, header, div, nav, a, ul, li {
@@ -8,6 +9,14 @@ html, body, header, div, nav, a, ul, li {
     font-family: 'Satisfy', cursive;
 } */
 
+/* Colors */
+
+.bg-light-grey {
+    background-color: #eceef6;
+}
+.bg-medium-grey {
+    background-color: #6b6b6b;
+}
 
 
 
