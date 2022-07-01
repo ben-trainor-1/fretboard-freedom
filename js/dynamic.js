@@ -1,8 +1,9 @@
 
-// Dynamically setting background images
-// Get inner HTML content for image path and set background image URL
 
 document.addEventListener("DOMContentLoaded", function(e) {
+
+    // Dynamically setting background images
+    // Get inner HTML content for image path and set background image URL
 
     var dynamicBGImage = document.getElementsByClassName('img-container-dynamic');
     var sourceFile;
