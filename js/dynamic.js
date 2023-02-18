@@ -19,12 +19,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
 // Update things when page is resized
 
-document.addEventListener("resize", function(e) {
+window.addEventListener("resize", function(e) {
     updateMenuBufferSize();
 });
 
 // Update menu buffer size
 
 function updateMenuBufferSize() {
+    console.log("Updating menu buffer size");
     document.getElementById('menu_buffer').style.height = document.getElementById('menu').offsetHeight.toString().concat("px");
 }

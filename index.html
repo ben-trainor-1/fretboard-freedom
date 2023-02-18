@@ -27,7 +27,7 @@
 
         <!-- Main Navigation -->
 
-        <header class="row justify-content-start m-0 p-0 border-bottom">
+        <header id="menu" class="row justify-content-start m-0 p-0 border-bottom position-fixed w-100">
 
             <nav class="navbar navbar-expand-md bg-light m-0 p-3">
 
@@ -45,17 +45,17 @@
                         <div class="collapse navbar-collapse m-0 p-0" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto me-auto m-0 p-0">
                                 <li class="nav-item m-0 p-1">
-                                    <a class="nav-link active m-0 p-0 pt-1 px-2" aria-current="page" href="index.html">
+                                    <a class="nav-link m-0 p-0 pt-1 px-2" aria-current="page" href="#about">
                                         <p class="fs-4 m-0 p-0">About</p>
                                     </a>
                                 </li>
                                 <li class="nav-item m-0 p-1">
-                                    <a class="nav-link m-0 p-0 pt-1 px-2" href="lessons.html">
+                                    <a class="nav-link m-0 p-0 pt-1 px-2" href="#teaching">
                                         <p class="fs-4 m-0 p-0">Teaching</p>
                                     </a>
                                 </li>
                                 <li class="nav-item m-0 p-1">
-                                    <a class="nav-link m-0 p-0 pt-1 px-2" href="concerts.html">
+                                    <a class="nav-link m-0 p-0 pt-1 px-2" href="#concerts">
                                         <p class="fs-4 m-0 p-0">Concerts</p>
                                     </a>
                                 </li>
@@ -65,7 +65,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item m-0 p-1">
-                                    <a class="nav-link m-0 p-0 pt-1 px-2" href="contact.html">
+                                    <a class="nav-link m-0 p-0 pt-1 px-2" href="#contact">
                                         <p class="fs-4 m-0 p-0">Contact</p>
                                     </a>
                                 </li>
@@ -81,58 +81,130 @@
 
         </header>
 
+        <!-- Menu buffer to fix overlap -->
+        <div id="menu_buffer" class="row m-0 p-0 w-100"></div>
 
         <!-- Main Content -->
-
         <div class="row m-0 p-0 border-bottom">
+
+            <div class="row m-0 p-0">
+                
+                <div class="img-container-dynamic img-title-container row m-0 p-0">
+                    <span class="img-title visually-hidden m-0 p-0">img/_MG_1968_resized.jpg</span>
+                </div>
+
+                <div class="row m-0 py-4">
+                    <h1 class="m-0 mt-4 p-0 fs-1 fw-bold text-center pb-3 fst-italic">Aaron Brock</h1>
+                    <h2 class="m-0 mb-2 p-0 fs-2 text-center pb-3 fst-italic">Guitarist, composer, and teacher</h2>
+                </div>
+                
+            </div>
 
             <div class="row col-xxl-2 col-lg-1 m-0 p-0"></div>
 
-            <div class="row col-xxl-8 col-lg-10 bg-light m-0 p-0 border-start border-end">
+            <div id="main_content" class="row col-xxl-8 col-lg-10 bg-light m-0 p-0 border-start border-end">
 
-                <div class="img-container-dynamic img-title-container row m-0 p-0">
-                    <span class="img-title visually-hidden m-0 p-0">img/temp/temp_tree.png</span>
+                <!-- About -->
+                <div id="about" class="row m-0 container-fluid px-5 py-5">
+
+                    <div class="m-0 px-lg-3 px-0"> <!-- Extra padding for larger screens -->
+
+                        <div class="row m-0 mb-5 p-0 justify-content-center">
+                            <img src="img/_MG_2070_square_resized.jpg" alt="Aaron Brock" class="img-fluid" id="bio_photo">
+                        </div>
+    
+                        <p class="fs-5 m-0 p-0 pb-2 indent">
+                            My name is Aaron Brock and I am currently the guitar instructor at Concordia Lutheran Church, and Bellevue's School of
+                            Performing Arts. It is quite a special honor to be able to teach and perform for people of all ages and backgrounds. I
+                            have a lot to bring to the west Tennessee region. I have been teaching guitar lessons, classes and performing since 
+                            2008. My students range from lower elementary all the way through college and retired seniors.
+                        </p>
+                        <p class="fs-5 m-0 p-0 pb-2 indent">
+                            I currently perform for all sorts of venues including grand openings, intimate dinners, weddings, chapel services, and
+                            concerts. I completed my master's in 2014 in Classical Guitar Performance with a minor in Music Education and am
+                            currently working towards my doctorate degree in Music Composition. I have won top prizes in international and local
+                            guitar competitions. All of these accomplishments have blessed me with the knowledge I needed to impart quality
+                            musicianship to the mid-south region.
+                        </p>
+                        <p class="fs-5 m-0 p-0 indent">
+                            Music is for everyone! My goal is to teach my students to learn to love music for a lifetime. I teach almost all fretted
+                            instruments including not limited to Guitar (Electric and Acoustic), Bass Guitar, Ukulele, and (soon) Mandolin. Our
+                            semesters of lessons culminate in a performance where the students are encouraged to perform what they have worked so
+                            hard to prepare. I hope to be able to create a program that will bring students all the way through elementary, middle,
+                            high school and on into college in order to create in them quality musicianship! We will have so much fun learning to
+                            play and bless others through music!
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div class="row m-0 px-4 py-4">
+                <!-- Teaching -->
+                <div id="teaching" class="row m-0 p-0 img-container-dynamic img-title-container text-light">
+                    
+                    <span class="img-title visually-hidden m-0 p-0">img/_MG_2092_resized.jpg</span>
 
-                    <h2 class="m-0 p-0 fs-1 fw-bold text-center pb-3">About me</h2>
+                    <div class="bg-dark-60 m-0 px-4 py-4">
 
-                    <div class="row container-fluid m-0 p-0">
+                        <div class="row m-0 px-5 pt-4 pb-2">
 
-                        <div class="col-md-3 text-center m-0 p-0">
-
-                            <img class="img-side img-fluid m-0 p-0 px-md-0 px-5" src="img/temp/temp_tree_square.png" alt="">
-
+                            <h3 class="m-0 p-0 fs-1 fw-bold text-center pb-3">Teaching Philosophy</h3>
+        
+                            <p class="fs-5 text-center m-0 p-0 pb-2">
+                                I believe in the freedom that comes from learning and knowing your instrument through and through. The term "fret-board
+                                freedom" comes from the ability to play on the guitar anything heard, read, or imagined.
+                            </p>
+                            <p class="fs-5 text-center m-0 p-0">
+                                I challenge my students to learn to how to read music and join the world of musicians that speak the same musical
+                                language. In this way, we can overcome the language barrier and communicate, connect, and collaborate with all
+                                musicians.
+                            </p>
+                                
                         </div>
-
-                        <div class="col-md-9 m-0 p-0 ps-3 pt-md-0 pt-3">
-                            <p class="fs-5 m-0 p-0 pb-2">
-                                My name is Aaron Brock and I am currently the guitar instructor at Concordia Lutheran Church, and Bellevue's School of
-                                Performing Arts. It is quite a special honor to be able to teach and perform for people of all ages and backgrounds. I
-                                have a lot to bring to the west Tennessee region. I have been teaching guitar lessons, classes and performing since 
-                                2008. My students range from lower elementary all the way through college and retired seniors.
-                            </p>
-                            <p class="fs-5 m-0 p-0 pb-2">
-                                I currently perform for all sorts of venues including grand openings, intimate dinners , weddings, chapel services, and
-                                concerts. I completed my master's in 2014 in Classical Guitar Performance with a minor in Music Education and am
-                                currently working towards my doctorate degree in Music Composition. I have won top prizes in international and local
-                                guitar competitions. All of these accomplishments have blessed me with the knowledge I needed to impart quality
-                                musicianship to the mid-south region.
-                            </p>
-                            <p class="fs-5 m-0 p-0 pb-2">
-                                Music is for everyone! My goal is to teach my students to learn to love music for a lifetime. I teach almost all fretted
-                                instruments including not limited to Guitar (Electric and Acoustic), Bass Guitar, Ukulele, and (soon) Mandolin. Our
-                                semesters of lessons culminate in a performance where the students are encouraged to perform what they have worked so
-                                hard to prepare. I hope to be able to create a program that will bring students all the way through elementary, middle,
-                                high school and on into college in order to create in them quality musicianship! We will have so much fun learning to
-                                play and bless others through music!
-                            </p>
-                        </div>
+        
+                        <div class="row m-0 px-4 py-4">
+                            
+                            <div class="row col-sm-4 m-0 p-0"></div>
+                            <div class="row link-contact-container col-sm-4 m-0 p-0">
+                                <a class="link-contact fs-3 fst-italic fw-bold text-center m-0 p-0 py-3" href="mailto: fretboardfreedom@gmail.com">Contact me today</a>
+                            </div>
+                            
+                        </div> 
                         
                     </div>
 
                 </div>
+
+                <!-- Contact -->
+                <div id="contact" class="row m-0 container-fluid px-5 py-5">
+
+                    <h2 class="fw-bold text-center fs-2 m-0 p-0 mb-3">Connect with me</h2>
+
+                    <ul class="list-unstyled text-center">
+                        <li class="d-inline">
+                            <a class="m-0 p-0 px-2 text-decoration-none" href="mailto: fretboardfreedom@gmail.com">
+                            <img src="img/icons/email-circle-svgrepo-com.png" alt="Email" style="height: 92px; width: 92px;">
+                            </a>
+                        </li>
+                        <li class="d-inline">
+                            <a class="m-0 p-0 px-2 text-decoration-none" href="https://www.facebook.com/aaron.p.brock">
+                            <img src="img/icons/facebook-svgrepo-com.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="d-inline">
+                            <a class="m-0 p-0 px-2 text-decoration-none" href="#">
+                            <img src="img/icons/patreon-v2-svgrepo-com.png" alt="Patreon">
+                            </a>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+
+                <div class="m-0 p-0 ">
+                    <div class="container-fluid bg-dark-50 h-100"></div>
+                </div>
+
                 
             </div>
             
@@ -141,9 +213,10 @@
 
         <!-- Footer -->
 
-        <footer class="row bg-light m-0 p-0">
-            <div class="text-center m-0 p-5">
-                designed by ben trainor &copy;2022
+        <footer class="row m-0 p-0 text-light img-container-dynamic img-title-container">
+            <span class="img-title visually-hidden m-0 p-0">img/_MG_2114_resized.jpg</span>
+            <div class="text-center bg-dark-50 m-0 p-5">
+                <a href="https://bentrainor.com" class="nav-link d-inline" target="_blank">designed by ben trainor &copy;2022</a>
             </div>
         </footer>
 
