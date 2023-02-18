@@ -4,6 +4,8 @@
 
 document.addEventListener("DOMContentLoaded", function(e) {
 
+    updateMenuBufferSize();
+    
     var dynamicBGImage = document.getElementsByClassName('img-container-dynamic');
     var sourceFile;
     
@@ -14,3 +16,15 @@ document.addEventListener("DOMContentLoaded", function(e) {
     }
 
 })
+
+// Update things when page is resized
+
+document.addEventListener("resize", function(e) {
+    updateMenuBufferSize();
+});
+
+// Update menu buffer size
+
+function updateMenuBufferSize() {
+    document.getElementById('menu_buffer').style.height = document.getElementById('menu').offsetHeight.toString().concat("px");
+}
