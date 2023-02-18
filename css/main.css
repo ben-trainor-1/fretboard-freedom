@@ -9,6 +9,17 @@ html, body, header, div, nav, a, ul, li {
     font-family: 'Satisfy', cursive;
 } */
 
+#menu {
+    z-index: 50;
+}
+
+#main_content {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.indent {
+    text-indent: 2em;
+}
 
 /* Links */
 
@@ -16,6 +27,7 @@ html, body, header, div, nav, a, ul, li {
     background-color: #335449;
     transition: .2s;
     border-radius: 10px;
+    height: fit-content;
 }
 .link-contact-container:hover {
     background-color: #1c2f28;
@@ -31,6 +43,9 @@ html, body, header, div, nav, a, ul, li {
     color: #5e7b71;
 }
 
+#contact a > img {
+    width: 75px;
+}
 
 /* Colors */
 
@@ -38,7 +53,46 @@ html, body, header, div, nav, a, ul, li {
     background-color: #eceef6;
 }
 .bg-medium-grey {
-    background-color: #6b6b6b;
+    background-color: #545454;
+}
+
+
+/* Backgrounds */
+
+.bg-dark-25 {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.bg-dark-50 {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.bg-dark-60 {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.bg-dark-75 {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.bg-dark-50-animated {
+    transition-duration: .3s;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.bg-dark-50-animated:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+/* Filters */
+
+.blur-5 {
+    filter: blur(5px);
+}
+
+.blur-10 {
+    filter: blur(10px);
 }
 
 
@@ -66,6 +120,12 @@ html, body, header, div, nav, a, ul, li {
         background-size: cover;
         min-height: 400px;
     }
+    .img-title-container:nth-of-type(1) {
+        min-height: 550px;
+    }
+    .img-title-container:last-of-type {
+        min-height: auto;
+    }
 
     /* Square side images */
     
@@ -73,4 +133,12 @@ html, body, header, div, nav, a, ul, li {
         .img-side {
             max-height: 150px;
         }
+    }
+
+    /* Bio photo */
+
+    #bio_photo {
+        height: 200px;
+        width: auto;
+        border-radius: 100%;
     }
